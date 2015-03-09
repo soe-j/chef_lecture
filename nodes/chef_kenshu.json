@@ -1,6 +1,8 @@
 {
+  "environment": "ec2",
   "run_list": [
-    "recipe[timezone]"
+    "recipe[timezone]",
+    "recipe[rbenv]"
   ],
   "automatic": {
     "ipaddress": "chef_kenshu"

@@ -1,6 +1,6 @@
 {
   "run_list": [
-
+    "recipe[timezone]"
   ],
   "automatic": {
     "ipaddress": "chef_kenshu"

@@ -1,0 +1,8 @@
+DEPENDENCIES
+  timezone
+    git: https://github.com/RyujiKawazoe/cookbooks.git
+    revision: accf84f2360bd4d4fb8807def56f053a984a9abf
+    rel: timezone
+
+GRAPH
+  timezone (0.0.3)

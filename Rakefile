@@ -7,11 +7,6 @@ task :default => :spec
 namespace :spec do
   # TODO target serverにいれる
   targets = ['chef_kenshu']
-  Dir.glob('./spec/*').each do |dir|
-    next unless File.directory?(dir)
-    targets << File.basename(dir)
-  end
-
   task :all     => targets
 
   targets.each do |target|

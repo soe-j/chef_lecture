@@ -11,3 +11,7 @@ end
 describe service("nginx") do
   it { should be_running }
 end
+
+describe file("/usr/share/nginx/html/mypage.html") do
+  it { should be_file }
+end

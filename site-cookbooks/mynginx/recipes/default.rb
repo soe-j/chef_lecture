@@ -6,3 +6,19 @@
 #
 # All rights reserved - Do Not Redistribute
 #
+package "nginx" do
+  action :install
+end
+
+service "nginx" do
+  action [ :enable, :start ]
+  supports :status => true, :restart => true, :reload => true
+end
+
+template "mypage.html" do
+  path "/usr/share/nginx/html/mypage.html"
+  source "mypage.html.erb"
+  owner "root"
+  group "root"
+  mode "0644"
+end

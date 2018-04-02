@@ -1,0 +1,11 @@
+{
+  "environment": "ec2",
+  "run_list": [
+    "recipe[timezone]",
+    "recipe[rbenv]",
+    "recipe[mynginx]"
+  ],
+  "automatic": {
+      "ipaddress": "chef_kenshu"
+  }
+}

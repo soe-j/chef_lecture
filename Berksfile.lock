@@ -1,0 +1,12 @@
+DEPENDENCIES
+  rbenv
+    git: https://github.com/RyujiKawazoe/rbenv_cookbook.git
+    revision: ddc7db3ac8fca84c49d33e22806b4be6912b751d
+  timezone
+    git: https://github.com/RyujiKawazoe/cookbooks.git
+    revision: accf84f2360bd4d4fb8807def56f053a984a9abf
+    rel: timezone
+
+GRAPH
+  rbenv (0.1.0)
+  timezone (0.0.3)
